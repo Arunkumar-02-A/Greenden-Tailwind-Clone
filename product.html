@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenden</title>
+    
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <!-- AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="bg-green-200 p-3 flex justify-between items-center shadow-xl sticky top-0 z-10">
+        <h1 class="text-3xl font-bold">GREENDEN</h1>
+        <div id="menuicon" class="md:hidden">
+            <i class="fa-solid fa-bars md:hidden" style="color: #0d0d0d;"></i>
+        </div>
+        <ul class=" gap-5 text-gray-600 hidden md:flex">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="product.html">Products</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <section id="sidenav" class="bg-green-100  fixed z-10 top-0" style="width: 50%;  height: 100vh; right: -50%; transition: all 1s;" > 
+        <div class="text-right font-bold p-5">
+            <p id="close-nav" class="inline cursor-pointer">X</p>
+        </div>
+
+        <ul class="flex flex-col gap-10 text-center  text-gray-600">
+
+            <li>
+                <a href="index.html" class="hover:text-black hover:underline">Home</a>
+            </li>
+            <li>
+                <a href="product.html" class="hover:text-black hover:underline">Products</a>
+            </li>
+            <li>
+                <a href="contact.html" class="hover:text-black hover:underline">Contact</a>
+            </li>
+        </ul>
+     </section>
+
+    <!-- Products -->
+     <section>
+        <div  class="text-center">
+            <h1 class="text-3xl font-bold mb-5 mt-10">Our Products</h1>
+            <input id="search" type="text" placeholder="Search for a Product...." class="border border-black p-2 rounded-3xl" style="width: 70%;">
+        </div>
+     </section>
+
+     <!-- image -->
+
+        <section  class="text-center p-4">
+          
+    
+            <div id="product-container" class="grid grid-cols-2 mt-6 gap-5 md:grid-cols-4">
+                <div>
+                    <img src="image/image- 2.png"
+                        class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" alt="plant">
+                    <h1>New Pet Plant</h1>
+                    <p>$ 99</p>
+                </div>
+                <div>
+                    <img src="image/image- 3.png"
+                        class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" alt="plant">
+                    <h1>Durga Nursery</h1>
+                    <p>$ 99</p>
+                </div>
+                <div>
+                    <img src="image/image- 4.png"
+                        class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" alt="plant">
+                    <h1> Plant</h1>
+                    <p>$ 99</p>
+                </div>
+                <div>
+                    <img src="image/image- 5.png"
+                        class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" alt="plant">
+                    <h1>Jersey lily</h1>
+                    <p>$ 99</p>
+                </div>
+                
+            </div>
+
+            <div id="product-container" class="grid grid-cols-2 mt-6 gap-5 md:grid-cols-4">
+                <div>
+                    <img src="image/image- 2.png"
+                        class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" alt="plant">
+                    <h1>New Pet Plant</h1>
+                    <p>$ 99</p>
+                </div>
+                <div>
+                    <img src="image/image- 3.png"
+                        class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" alt="plant">
+                    <h1>Durga Nursery</h1>
+                    <p>$ 99</p>
+                </div>
+                <div>
+                    <img src="image/image- 4.png"
+                        class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" alt="plant">
+                    <h1> Plant</h1>
+                    <p>$ 99</p>
+                </div>
+                <div>
+                    <img src="image/image- 5.png"
+                        class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" alt="plant">
+                    <h1>Jersey lily</h1>
+                    <p>$ 99</p>
+                </div>
+            </div>
+    
+        </section>
+
+            <!-- Footer -->
+    <section>
+        <div class="bg-green-200 mt-5 p-10 ">
+            <h1 class="text-3xl font-bold mb-4">Greenden</h1>
+            <p class="mb-4 text-1xl font-medium">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+            <p class="mb-4 text-1xl font-medium">@ 2024 Greendy.com</p>
+        </div>
+    </section>
+
+     <script src="product.js"></script>
+</body>
+
+</html>
